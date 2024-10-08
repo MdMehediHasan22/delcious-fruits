@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Fruit</title>
+    <!-- daisyUI -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- tailwind custom color -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- awesome font -->
+  <script src="https://kit.fontawesome.com/f940a752fa.js" crossorigin="anonymous"></script>
+  <style>
+    .font-lato{
+        font-family: "Lato", sans-serif;
+    }
+  </style>
+</head>
+<body class="font-lato bg-gray-100">
+    <header class="md:container md:mx-auto bg-[#F85559] rounded-full">
+        <div class="navbar flex justify-between items-center">
+            <!-- Navbar Start (Menu) -->
+            <div class="navbar-start">
+                <!-- Mobile Menu (Hidden on larger screens) -->
+                <div class="dropdown md:hidden">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 text-white"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+                    <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Full Menu for Large Screens -->
+                <div class="hidden md:flex space-x-4">
+                    <a class="text-white">Home</a>
+                    <a class="text-white">About Us</a>
+                    <a class="text-white">Shop</a>
+                    <a class="text-white">All Fruits</a>
+                </div>
+            </div>
+    
+            <!-- Logo Center -->
+            <div class="navbar-center text-center">
+                <img src="./images/logo.png" alt="Logo" class="w-12 h-12">
+                <a class="btn btn-ghost normal-case text-3xl text-white">Fruit Burst</a>
+            </div>
+    
+            <!-- Search bar (Responsive Behavior) -->
+            <div class="navbar-end">
+                <div class="form-control relative">
+                    <i class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
+                    <input 
+                        type="text" 
+                        placeholder="Search here" 
+                        class="input input-bordered rounded-full 
+                               w-10 h-10 md:w-40 md:h-9 transition-all duration-300 
+                               hover:w-40 hover:placeholder-gray-500 
+                               placeholder-transparent focus:placeholder-gray-500 
+                               focus:w-40 focus-visible:placeholder-gray-500" 
+                    />
+                </div>
+            </div>
+            
+            
+        </div>
+    </header>
+    
+     <main>
+
+     </main>
+     <footer>
+
+     </footer>
+    
+</body>
+</html>
